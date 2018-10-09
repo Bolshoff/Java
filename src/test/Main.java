@@ -9,7 +9,7 @@ public class Main {
      //   hallo();
        // numbers();
      //   numbersglam();
-        numbers1();
+        numbers2();
     }
 
     static void hallo() {
@@ -56,21 +56,52 @@ public class Main {
         double a;
         double b;
         double sum;
-        System.out.println("Введите первое слогаемое");
-        Scanner one = new Scanner(System.in);
-        a = one.nextDouble();
-        System.out.println("Введите второе слогаемое");
-        Scanner two = new Scanner(System.in);
-        b = two.nextDouble();
-       // while (a!=0 & b !=0) {
-            sum = a + b;
-            System.out.println(a + " + " + b + " = " + sum);
-       //     return sum;
-       // }
+
+            System.out.println("Введите первое слогаемое");
+            Scanner one = new Scanner(System.in);
+            a = one.nextDouble();
+            System.out.println("Введите второе слогаемое");
+            Scanner two = new Scanner(System.in);
+            b = two.nextDouble();
+if (a!=0&&b!=0) {
+    sum = a + b;
+
+    System.out.println(a + " + " + b + " = " + sum);
+}
+else {
+    System.out.println(" ZERO Cold");
+}
+
         return 0;
 
     }
+
+
+
+    static double numbers2() {
+
+        double a;
+        double b;
+        double sum;
+do {
+
+    System.out.println("Введите первое слогаемое");
+    Scanner one = new Scanner(System.in);
+    a = one.nextDouble();
+    System.out.println("Введите второе слогаемое");
+    Scanner two = new Scanner(System.in);
+    b = two.nextDouble();
+
+    sum = a + b;
+
+    System.out.println(a + " + " + b + " = " + sum);
+
 }
+        while (a!=0&&b!=0);
+        return 0;
+    }
+}
+
 
 
 /*
@@ -80,7 +111,7 @@ public class Main {
 ++2) Программа вводящая имя (скажем "Вася") и пишущая "Привет Вася" имя вводить в переменную строкового типа
 ++3) Программа вводящая два числа и выводящая их сумму
 ++4) Программа делающая то же самое, но печатающая красиво введенные числа, знаки сложения и равенства и сумму (типа "2+3=5")
-5) Программа также вводящая числа и печатающая сумму, но делающаяя это в цикле, до тех пор, пока не введут в качестве чисел два нуля
+++5) Программа также вводящая числа и печатающая сумму, но делающаяя это в цикле, до тех пор, пока не введут в качестве чисел два нуля
 6) Программа, вводящая три числа и выводящая сумму двух первых, если третье равно 1 или разность двух первых если третье равно 2
 7) Такую же программу, которая может еще считать умножение и деление, если третье число будет 3 или 4
 8 ) Такую же программу, которая работает в цикле, пока третье число не окажется каким-нибудь неподходящим (меньше 1 или больше 4)
