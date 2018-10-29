@@ -9,7 +9,8 @@ public class Main {
      //   hallo();
        // numbers();
      //   numbersglam();
-        numbers2();
+       // numbers2();
+       sumNumber();
     }
 
     static void hallo() {
@@ -99,6 +100,37 @@ do {
 }
         while (a!=0&&b!=0);
         return 0;
+    }
+
+    static void   sumNumber(){
+        double a;
+        double b;
+        double c;
+        double result ;
+
+        System.out.println("Введите первое число");
+        Scanner one = new Scanner(System.in);
+        a = one.nextDouble();
+
+        System.out.println("Введите второе число");
+        Scanner two = new Scanner(System.in);
+        b = two.nextDouble();
+
+        System.out.println("Введите третье число");
+        Scanner three = new Scanner(System.in);
+        c = three.nextDouble();
+
+             if (c == 1){
+                 System.out.println(a + b);
+        }
+        if (c == 2){
+
+            System.out.println(a-b);
+        }
+    else {
+            System.out.println("C не равно 2 или 1");
+        }
+
     }
 }
 
